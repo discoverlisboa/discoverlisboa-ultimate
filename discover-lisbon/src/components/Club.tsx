@@ -1,4 +1,3 @@
-```javascript
 import { motion } from 'framer-motion';
 import { Shield, CreditCard, MapPin, Users, ExternalLink } from 'lucide-react';
 import { siteConfig } from '../siteConfig';

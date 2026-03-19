@@ -109,10 +109,11 @@ export const translations = {
                 tournaments_desc: "Participamos em competições nacionais e organizamos os nossos beernicks.",
                 tb: "Team Building",
                 tb_desc: "Fins de semana dedicados a fortalecer os laços da nossa família.",
-                copa: "Copa Ibérica",
                 copa_desc: "Participação no torneio anual que junta equipas de Portugal e Espanha.",
+                whatsapp_cta: "Entrar no Grupo WhatsApp 💬",
             }
         },
+
         gallery: {
             title: "Galeria & Instagram",
             desc: "Momentos do campo, do convívio e da nossa família. Segue-nos no Instagram para veres tudo!",
@@ -265,10 +266,11 @@ export const translations = {
                 tournaments_desc: "We participate in national competitions and organize our beernicks.",
                 tb: "Team Building",
                 tb_desc: "Weekends dedicated to strengthening our family bonds.",
-                copa: "Copa Ibérica",
                 copa_desc: "Participation in the annual tournament that brings together teams from Portugal and Spain.",
+                whatsapp_cta: "Join WhatsApp Group 💬",
             }
         },
+
         gallery: {
             title: "Gallery & Instagram",
             desc: "Moments from the field, socializing, and our family. Follow us on Instagram to see it all!",
