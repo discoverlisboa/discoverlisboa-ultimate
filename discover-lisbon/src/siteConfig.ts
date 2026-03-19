@@ -60,6 +60,20 @@ export const siteConfig = {
             thumbnail: "/discover1.jpeg" // Use local image as placeholder
         }
     ],
+    gallery: [
+        { src: "/gallery/RPC_1534.jpg", caption: "Copa Ibérica 2026 - Team Board" },
+        { src: "/gallery/IMG_4851.jpg", caption: "Intensidade no Lançamento" },
+        { src: "/gallery/IMG_7811.jpg", caption: "Estratégia e Foco" },
+        { src: "/gallery/RPC_1577.jpg", caption: "Defesa Pressionante" },
+        { src: "/gallery/IMG_5029.jpg", caption: "O Salto para a Vitória" },
+        { src: "/gallery/RPC_1773.jpg", caption: "Espírito de Jogo" },
+        { src: "/gallery/IMG_6997.jpg", caption: "Equipa Disc'Over Lisboa" },
+        { src: "/gallery/RPC_1817.jpg", caption: "Momentos de Glória" },
+        { src: "/gallery/IMG_4752.jpg", caption: "Treino na Alameda" },
+        { src: "/gallery/IMG_4903.jpg", caption: "Festa do Ultimate" },
+        { src: "/gallery/IMG_7063.jpg", caption: "União e Amizade" },
+        { src: "/gallery/RPC_1637.jpg", caption: "Aquecimento e Preparação" },
+    ],
     social: {
         instagram: "https://www.instagram.com/discoverlisboa/",
         facebook: "https://www.facebook.com/ultimatediscoverlisboa",

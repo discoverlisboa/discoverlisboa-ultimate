@@ -1,42 +1,10 @@
 import { motion } from 'framer-motion';
 import { Instagram, ExternalLink } from 'lucide-react';
-import MemberGate from './MemberGate';
-import discPhoto1 from '../../disc.jpeg?url';
-import discPhoto2 from '../../disc2.jpeg?url';
-import discPhoto3 from '../../disc3.jpeg?url';
-import discPhoto4 from '../../disc4.jpeg?url';
-import discsJamor from '../../discs-jamor.jpeg?url';
-import jamor from '../../jamor.jpeg?url';
-
-// Local team photos
-const photos = [
-    {
-        src: discPhoto1,
-        caption: 'Disc\'Over em ação 🥏',
-    },
-    {
-        src: discPhoto2,
-        caption: 'Spirit of the Game 💪',
-    },
-    {
-        src: discPhoto3,
-        caption: 'Convívio depois do treino 🍺',
-    },
-    {
-        src: discPhoto4,
-        caption: 'Alameda da Universidade',
-    },
-    {
-        src: discsJamor,
-        caption: 'Torneio em Jamor 🏆',
-    },
-    {
-        src: jamor,
-        caption: 'Equipa unida 🤝',
-    },
-];
+import { siteConfig } from '../siteConfig';
 
 const Gallery = ({ t }: { t: any }) => {
+    const photos = siteConfig.gallery;
+
     return (
         <section id="gallery" style={{ backgroundColor: '#131c2e' }}>
             <div className="container">
