@@ -52,12 +52,12 @@ const Members = ({ t, language }: { t: any, language: string }) => {
         { name: "Gonçalo Tavares", role: t.roles.player, number: 28 },
         { name: "Miguel Costa", role: t.roles.player, number: 70 },
         { name: "Nelson Belém", role: t.roles.player, number: 75 },
-        { name: "Pedro Pascoal", role: t.roles.player, number: 77 },
+        { name: "Pedro Pascoal", role: t.roles.coach, number: 77 },
         { name: "Dimitri Rey", role: t.roles.player, number: 83 },
         { name: "Konstantin Basos", role: t.roles.player, number: 97 },
         { name: "Pedro Chen", role: t.roles.player, number: 99 },
         { name: "Matt Rowlinson", role: t.roles.player, number: 2 },
-        { name: "Veronika Almási", role: t.roles.player, number: 8 },
+        { name: "Veronika Almási", role: t.roles.president, number: 8 },
         { name: "Tomás Barejo", role: t.roles.player, number: 90 },
         { name: "Gil junior", role: t.roles.player, number: 5 },
         { name: "Frede Glória", role: t.roles.player, number: 2 },
@@ -66,11 +66,11 @@ const Members = ({ t, language }: { t: any, language: string }) => {
         { name: "Tommaso Sarotti", role: t.roles.player, number: 9 },
         { name: "Janne Uteg", role: t.roles.player, number: 40 },
         { name: "Austin Cipriano", role: t.roles.player, number: 21 },
-        { name: "Kallu (Kamal)", role: t.roles.player, number: 4 },
+        { name: "Kallu (Kamal)", role: t.roles.v_president, number: 4 },
         { name: "Giuseppe", role: t.roles.player, number: 11 },
         { name: "Sabina", role: t.roles.player, number: 17 },
         { name: "Warren Wee", role: t.roles.player, number: 219 },
-        { name: "Ana Alfaiate", role: t.roles.player, number: 73 },
+        { name: "Ana Alfaiate", role: t.roles.treasurer, number: 73 },
     ];
 
     return (

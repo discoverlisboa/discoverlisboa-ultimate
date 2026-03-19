@@ -4,15 +4,15 @@ import copaibericaBg from '../../copaiberica.jpeg?url';
 
 const Schedule = ({ t }: { t: any }) => {
     const sessions = [
-        { day: t.days.tuesday, time: "19:00 - 21:00", loc: "Cidade Universitária", maps: "https://goo.gl/maps/VBCVir6GZcD2", type: t.types.open },
-        { day: t.days.thursday, time: "19:00 - 21:00", loc: "Cidade Universitária", maps: "https://goo.gl/maps/VBCVir6GZcD2", type: t.types.beginners },
-        { day: t.days.weekend, time: "Horário variável", loc: "Jamor (Geralmente)", type: t.types.occasional, note: t.note }
+        { day: t.days.tuesday, time: "19:00 - 21:00", loc: "Cidade Universitária", maps: "https://goo.gl/maps/VBCVir6GZcD2", type: t.types.advanced },
+        { day: t.days.thursday, time: "19:00 - 21:00", loc: "Cidade Universitária", maps: "https://goo.gl/maps/VBCVir6GZcD2", type: t.types.advanced },
+        { day: t.days.weekend, time: "Horário variável", loc: "Jamor", type: t.types.open, note: t.note }
     ];
 
-    const calendarUrl = "https://calendar.google.com/calendar/u/0?cid=NGQzOWQ4ODU2OThlNmE4N2UwYWM3NTRkMDkwMzFkMjcyZGRjM2U4ZTU4OTQwMjUzYzA4ODg4Y2UxYmU5ZDllZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t";
+    const calendarUrl = "https://docs.google.com/spreadsheets/u/0/d/1-Tp-eYVYLUsjCGGV_4qvKhRwuDRMXn5gM7AwNLmS1YU/htmlview";
 
     return (
-        <section id="training" style={{ 
+        <section id="training" style={{
             backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), url(${copaibericaBg})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',

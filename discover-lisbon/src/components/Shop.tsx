@@ -1,79 +1,15 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ShoppingBag, Star, Package } from 'lucide-react';
-
-const products = [
-    {
-        id: 1,
-        name: "Disco Oficial Disc'Over",
-        price: "15€",
-        category: "Equipamento",
-        image: "/disc.jpeg",
-        description: "175g Ultrastar - O padrão mundial para Ultimate Frisbee."
-    },
-    {
-        id: 2,
-        name: "Jersey Jogo (Home)",
-        price: "35€",
-        category: "Vestuário",
-        image: "/disc2.jpeg",
-        description: "Material respirável de alta performance com design exclusivo 2024."
-    },
-    {
-        id: 3,
-        name: "Hoodie Disc'Over",
-        price: "40€",
-        category: "Vestuário",
-        image: "/disc3.jpeg",
-        description: "Quente e confortável, perfeito para as noites de treino na Alameda."
-    },
-    {
-        id: 4,
-        name: "Pack Iniciante",
-        price: "45€",
-        category: "Bundle",
-        image: "/disc4.jpeg",
-        description: "Inclui 1 Disco + 1 Jersey. Tudo o que precisas para começar."
-    }
-];
+import { ShoppingBag, Star, Package, MessageCircle } from 'lucide-react';
+import { siteConfig } from '../siteConfig';
+import OrderModal from './OrderModal';
 
 const Shop = ({ t }: { t: any }) => {
-    const products = [
-        {
-            id: 1,
-            name: "Disco Oficial Disc'Over",
-            price: "13€",
-            category: "Equipamento", // Category names should probably be in translation too if we want full i18n
-            image: "/disc.jpeg",
-            description: "175g Ultrastar - O padrão mundial para Ultimate Frisbee."
-        },
-        {
-            id: 2,
-            name: "Jersey Jogo (Home)",
-            price: "35€",
-            category: "Vestuário",
-            image: "/disc2.jpeg",
-            description: "Material respirável de alta performance com design exclusivo 2024."
-        },
-        {
-            id: 3,
-            name: "Hoodie Disc'Over",
-            price: "40€",
-            category: "Vestuário",
-            image: "/disc3.jpeg",
-            description: "Quente e confortável, perfeito para as noites de treino na Alameda."
-        },
-        {
-            id: 4,
-            name: "Pack Iniciante",
-            price: "45€",
-            category: "Bundle",
-            image: "/discs-jamor.jpeg",
-            description: "Inclui 1 Disco + 1 Jersey. Tudo o que precisas para começar."
-        }
-    ];
+    const { products } = siteConfig.shop;
+    const [selectedProduct, setSelectedProduct] = useState<any>(null);
 
     return (
-        <section id="shop" className="container">
+        <section id="shop" className="container" style={{ paddingTop: '5rem' }}>
             <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
                 <h2 className="section-title">{t.title}</h2>
                 <p style={{ color: 'var(--text-muted)', maxWidth: '700px', margin: '0 auto', fontSize: '1.1rem' }}>
@@ -124,10 +60,11 @@ const Shop = ({ t }: { t: any }) => {
                             </p>
 
                             <button
-                                onClick={() => window.location.href = "mailto:discover.lisboa@gmail.com?subject=Pedido de Merch: " + product.name}
+                                onClick={() => setSelectedProduct(product)}
                                 className="btn-primary"
-                                style={{ width: '100%', justifyContent: 'center' }}
+                                style={{ width: '100%', justifyContent: 'center', gap: '0.5rem' }}
                             >
+                                <MessageCircle size={18} />
                                 {t.order_cta}
                             </button>
                         </div>
@@ -135,14 +72,33 @@ const Shop = ({ t }: { t: any }) => {
                 ))}
             </div>
 
-            <div className="glass-card" style={{ marginTop: '4rem', padding: '2rem', textAlign: 'center', borderStyle: 'dashed' }}>
+            <div className="glass-card" style={{ 
+                marginTop: '4rem', 
+                padding: '2rem', 
+                textAlign: 'center', 
+                borderStyle: 'dashed',
+                background: 'rgba(9,132,227,0.03)'
+            }}>
                 <p style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', fontSize: '1.1rem' }}>
                     <Star color="var(--accent)" fill="var(--accent)" />
                     {t.discs_note}
                 </p>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginTop: '0.5rem' }}>
+                    {t.operational_note || "Your order will be received by our team and we will contact you shortly."}
+                </p>
             </div>
+
+            {selectedProduct && (
+                <OrderModal 
+                    product={selectedProduct} 
+                    onClose={() => setSelectedProduct(null)} 
+                    t={t}
+                />
+            )}
         </section>
     );
 };
 
 export default Shop;
+
+

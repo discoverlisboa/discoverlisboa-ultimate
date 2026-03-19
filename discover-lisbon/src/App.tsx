@@ -11,6 +11,7 @@ import Gallery from './components/Gallery';
 import Members from './components/Members';
 import Join from './components/Join';
 import Game from './components/Game';
+import VideoSection from './components/VideoSection';
 import { Instagram, Facebook, Mail, Menu, X, Globe, Moon, Sun } from 'lucide-react';
 import { translations } from './translations';
 import faviconLogo from '/favicon.avif?url';
@@ -38,6 +39,7 @@ function App() {
     { href: '#members', label: t.nav.members },
     { href: '#gallery', label: t.nav.gallery },
     { href: '#shop', label: t.nav.shop },
+    { href: '#videos', label: 'Videos' },
     { href: '#join', label: t.nav.contact },
   ];
 
@@ -148,6 +150,7 @@ function App() {
       <Community t={t.community} />
       <Members t={t.members} language={language} />
       <Gallery t={t} />
+      <VideoSection t={t} />
       <Shop t={t.shop} />
       <Join t={t} />
 
