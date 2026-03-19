@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Clock, MapPin } from 'lucide-react';
+import copaibericaBg from '../../copaiberica.jpeg?url';
 
 const Schedule = ({ t }: { t: any }) => {
     const sessions = [
@@ -11,7 +12,13 @@ const Schedule = ({ t }: { t: any }) => {
     const calendarUrl = "https://calendar.google.com/calendar/u/0?cid=NGQzOWQ4ODU2OThlNmE4N2UwYWM3NTRkMDkwMzFkMjcyZGRjM2U4ZTU4OTQwMjUzYzA4ODg4Y2UxYmU5ZDllZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t";
 
     return (
-        <section id="training" style={{ backgroundColor: '#131c2e' }}>
+        <section id="training" style={{ 
+            backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), url(${copaibericaBg})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed',
+            position: 'relative'
+        }}>
             <div className="container">
                 <h2 className="section-title">{t.title}</h2>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
@@ -27,7 +34,7 @@ const Schedule = ({ t }: { t: any }) => {
                         >
                             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
                                 <h3 style={{ color: 'var(--accent)' }}>{session.day}</h3>
-                                <span style={{ fontSize: '0.8rem', background: 'rgba(246, 173, 85, 0.1)', color: 'var(--accent)', padding: '0.2rem 0.8rem', borderRadius: '1rem' }}>
+                                <span style={{ fontSize: '0.8rem', background: 'rgba(9, 132, 227, 0.1)', color: 'var(--accent)', padding: '0.2rem 0.8rem', borderRadius: '1rem' }}>
                                     {session.type}
                                 </span>
                             </div>

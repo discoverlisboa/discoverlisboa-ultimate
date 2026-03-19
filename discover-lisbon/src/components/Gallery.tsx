@@ -1,33 +1,38 @@
 import { motion } from 'framer-motion';
 import { Instagram, ExternalLink } from 'lucide-react';
 import MemberGate from './MemberGate';
+import discPhoto1 from '../../disc.jpeg?url';
+import discPhoto2 from '../../disc2.jpeg?url';
+import discPhoto3 from '../../disc3.jpeg?url';
+import discPhoto4 from '../../disc4.jpeg?url';
+import discsJamor from '../../discs-jamor.jpeg?url';
+import jamor from '../../jamor.jpeg?url';
 
-// High-quality Ultimate Frisbee / sport images used as gallery placeholders
-// until the team's own Instagram photos can be embedded directly.
+// Local team photos
 const photos = [
     {
-        src: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=600',
+        src: discPhoto1,
         caption: 'Disc\'Over em ação 🥏',
     },
     {
-        src: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=600',
+        src: discPhoto2,
         caption: 'Spirit of the Game 💪',
     },
     {
-        src: 'https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&q=80&w=600',
+        src: discPhoto3,
         caption: 'Convívio depois do treino 🍺',
     },
     {
-        src: 'https://images.unsplash.com/photo-1544919396-104908075677?auto=format&fit=crop&q=80&w=600',
+        src: discPhoto4,
         caption: 'Alameda da Universidade',
     },
     {
-        src: 'https://images.unsplash.com/photo-1533560904424-a0c61dc306fc?auto=format&fit=crop&q=80&w=600',
-        caption: 'Equipa unida 🤝',
+        src: discsJamor,
+        caption: 'Torneio em Jamor 🏆',
     },
     {
-        src: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&q=80&w=600',
-        caption: 'Disc\'Over Lisbon Merch',
+        src: jamor,
+        caption: 'Equipa unida 🤝',
     },
 ];
 

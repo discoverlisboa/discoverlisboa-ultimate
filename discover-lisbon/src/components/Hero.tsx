@@ -18,7 +18,7 @@ const Hero = ({ t, language }: { t: any, language: string }) => {
       {/* Subtle animated gradient overlay */}
       <div style={{
         position: 'absolute', inset: 0,
-        background: 'radial-gradient(ellipse at 70% 50%, rgba(246,173,85,0.08), transparent 70%)',
+        background: 'radial-gradient(ellipse at 70% 50%, rgba(9,132,227,0.08), transparent 70%)',
         pointerEvents: 'none'
       }} />
 
@@ -37,8 +37,8 @@ const Hero = ({ t, language }: { t: any, language: string }) => {
               display: 'inline-flex',
               alignItems: 'center',
               gap: '0.5rem',
-              background: 'rgba(246,173,85,0.12)',
-              border: '1px solid rgba(246,173,85,0.3)',
+              background: 'rgba(9,132,227,0.12)',
+              border: '1px solid rgba(9,132,227,0.3)',
               borderRadius: '2rem',
               padding: '0.35rem 1rem',
               marginBottom: '1.5rem',
@@ -56,7 +56,7 @@ const Hero = ({ t, language }: { t: any, language: string }) => {
           <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', marginBottom: '1.5rem', letterSpacing: '-1px' }}>
             {t.title.split(`{${t.title_accent}}`)[0]}
             <span style={{
-              background: 'linear-gradient(to right, var(--accent), #f97316)',
+              background: 'linear-gradient(to right, var(--accent), #1e90ff)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',

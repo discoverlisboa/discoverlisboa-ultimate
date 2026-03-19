@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import Hero from './components/Hero';
 import About from './components/About';
 import Schedule from './components/Schedule';
+import Birthdays from './components/Birthdays';
+import MemberForm from './components/MemberForm';
 import Shop from './components/Shop';
 import Club from './components/Club';
 import Community from './components/Community';
@@ -11,6 +13,7 @@ import Join from './components/Join';
 import Game from './components/Game';
 import { Instagram, Facebook, Mail, Menu, X, Globe, Moon, Sun } from 'lucide-react';
 import { translations } from './translations';
+import faviconLogo from '/favicon.avif?url';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,7 +42,8 @@ function App() {
   ];
 
   return (
-    <main>
+    <>
+      <main>
       {/* Navigation */}
       <nav style={{
         position: 'fixed',
@@ -53,7 +57,7 @@ function App() {
       }}>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '80px' }}>
           <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', fontFamily: 'var(--font-heading)', fontSize: '1.4rem', fontWeight: '900', color: 'var(--accent)', textDecoration: 'none', letterSpacing: '-0.5px' }}>
-            <img src="/discover_logo.avif" alt="Disc'Over Logo" style={{ height: '40px', width: 'auto' }} />
+            <img src={faviconLogo} alt="Discover Lisboa Logo" style={{ height: '45px', width: 'auto', borderRadius: '0.5rem', background: 'transparent' }} />
             <span>DISC'OVER <span style={{ color: 'var(--text-main)' }}>LISBOA</span></span>
           </a>
 
@@ -139,6 +143,7 @@ function App() {
       <About t={t.about} />
       <Game t={t.game} />
       <Schedule t={t.training} />
+      <Birthdays t={t} />
       <Club t={t.club} />
       <Community t={t.community} />
       <Members t={t.members} language={language} />
@@ -168,11 +173,27 @@ function App() {
           Alameda da Universidade, 1649-013 Lisboa &nbsp;·&nbsp;
           <a href="mailto:discover.lisboa@gmail.com" style={{ color: 'var(--accent)', textDecoration: 'none' }}>discover.lisboa@gmail.com</a>
         </p>
+
+        <div style={{ marginTop: '1.5rem', paddingTop: '1.5rem', borderTop: '1px solid var(--glass-border)' }}>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginBottom: '0.8rem' }}>Part of APUDD</p>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+            <a href="https://www.apudd.pt/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '0.9rem' }}>
+              APUDD.pt
+            </a>
+            <span style={{ color: 'var(--text-muted)' }}>·</span>
+            <a href="https://www.instagram.com/apuddisco/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '0.9rem' }}>
+              @apuddisco
+            </a>
+          </div>
+        </div>
+
         <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', marginTop: '1.5rem', opacity: 0.6 }}>
           © 2025-2026 Disc'Over Lisboa — {t.about.story_p2.split(',')[0]} — {t.footer.rights}
         </p>
       </footer>
     </main>
+      <MemberForm />
+    </>
   );
 }
 

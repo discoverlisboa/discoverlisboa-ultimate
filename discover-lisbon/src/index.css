@@ -1,8 +1,8 @@
 :root {
   --primary: #1a365d;
   --primary-light: #2a4365;
-  --accent: #f6ad55;
-  --accent-hover: #ed8936;
+  --accent: #0984e3;
+  --accent-hover: #0770d0;
   --bg-dark: #0f172a;
   --bg-card: rgba(30, 41, 59, 0.7);
   --text-main: #f8fafc;
@@ -82,7 +82,7 @@ a {
 .btn-primary:hover {
   background-color: var(--accent-hover);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(246, 173, 85, 0.3);
+  box-shadow: 0 4px 12px rgba(9, 132, 227, 0.3);
 }
 
 section {
@@ -120,8 +120,8 @@ section {
 .theme-light {
   --primary: #1e3a8a;
   --primary-light: #eff6ff;
-  --accent: #ea580c;
-  --accent-hover: #c2410c;
+  --accent: #0873d0;
+  --accent-hover: #0565b8;
   --bg-dark: #f8fafc;
   --bg-card: #ffffff;
   --text-main: #0f172a;
