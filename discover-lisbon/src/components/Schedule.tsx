@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
 import { Clock, MapPin } from 'lucide-react';
-import copaibericaBg from '../../copaiberica.jpeg?url';
+import { siteConfig } from '../siteConfig';
 
 const Schedule = ({ t }: { t: any }) => {
+    const copaibericaBg = siteConfig.training.background;
     const sessions = [
         { day: t.days.tuesday, time: "19:00 - 21:00", loc: "Cidade Universitária", maps: "https://goo.gl/maps/VBCVir6GZcD2", type: t.types.advanced },
         { day: t.days.thursday, time: "19:00 - 21:00", loc: "Cidade Universitária", maps: "https://goo.gl/maps/VBCVir6GZcD2", type: t.types.advanced },

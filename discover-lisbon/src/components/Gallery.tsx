@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Instagram, ExternalLink } from 'lucide-react';
+import MemberGate from './MemberGate';
 import { siteConfig } from '../siteConfig';
 
 const Gallery = ({ t }: { t: any }) => {

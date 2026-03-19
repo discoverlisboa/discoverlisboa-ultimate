@@ -1,8 +1,12 @@
 export const siteConfig = {
     hero: {
         videoUrl: "https://player.vimeo.com/external/434045526.sd.mp4?s=c27ee34869bc00368b7539300305530f30c679a9&profile_id=164&oauth2_token_id=57447761", // Pexels - Ultimate style (nature/beach/activity)
-        fallbackImage: "https://images.unsplash.com/photo-1593010263914-ba36b80145db?auto=format&fit=crop&q=80",
+        fallbackImage: "/gallery/IMG_7063.jpg",
     },
+    training: {
+        background: "/gallery/copaiberica.jpeg",
+    },
+
     shop: {
         products: [
             {
