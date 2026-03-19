@@ -11,7 +11,8 @@ const Community = ({ t }: { t: any }) => {
     ];
 
     return (
-        <section id="community" style={{ background: 'linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), url("/copaiberica.jpeg") center/cover fixed' }}>
+        <section id="community" style={{ background: 'linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), url("/gallery/copaiberica.jpeg") center/cover fixed' }}>
+
             <div className="container">
                 <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
                     <h2 className="section-title">{t.title}</h2>
@@ -55,7 +56,7 @@ const Community = ({ t }: { t: any }) => {
                             </p>
                         </div>
                         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                            <img src="/jamor.jpeg" alt="Team" style={{ width: '100%', borderRadius: '0.5rem' }} />
+                            <img src="/gallery/jamor.jpeg" alt="Team" style={{ width: '100%', borderRadius: '0.5rem' }} />
                             <img src="https://images.unsplash.com/photo-1533560904424-a0c61dc306fc?auto=format&fit=crop&q=80" alt="Drink" style={{ width: '100%', borderRadius: '0.5rem' }} />
                         </div>
                     </div>

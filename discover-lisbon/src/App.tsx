@@ -14,7 +14,8 @@ import Game from './components/Game';
 import VideoSection from './components/VideoSection';
 import { Instagram, Facebook, Mail, Menu, X, Globe, Moon, Sun } from 'lucide-react';
 import { translations } from './translations';
-import faviconLogo from '/favicon.avif?url';
+import { siteConfig } from './siteConfig';
+import faviconLogo from '/gallery/favicon.avif?url';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -161,16 +162,20 @@ function App() {
         </div>
 
         <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', marginBottom: '2rem' }}>
-          <a href="https://l.instagram.com/?u=https%3A%2F%2Flinktr.ee%2Fdiscoverlisboa%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGny3ZpWpLZIAWcSxHTs8BeZjT0IXQm-iUXRZMPOrXL2Gf-DIlerCsl2B4zltY_aem_8Xi9t7o913LUom-G9p5ShQ&e=AT5K6HBNH5S-BLC5mNMwlXrtZgtnOHasOdoyRmRrJQMyCoirwPwS5bh8jHkRAC9Urdh5FNdcpVNagoVchKuoWRjh8UHXMDK5_ptygwGDiw" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)' }}>
+          <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)' }}>
             <Instagram size={24} />
           </a>
-          <a href="https://www.facebook.com/ultimatediscoverlisboa" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)' }}>
+          <a href={siteConfig.social.facebook} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)' }}>
             <Facebook size={24} />
           </a>
-          <a href="mailto:discover.lisboa@gmail.com" style={{ color: 'var(--text-muted)' }}>
+          <a href={siteConfig.social.whatsapp} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-muted)' }}>
+             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style={{ width: '24px', height: '24px', filter: 'grayscale(1) brightness(1.5)' }} />
+          </a>
+          <a href={`mailto:${siteConfig.social.email}`} style={{ color: 'var(--text-muted)' }}>
             <Mail size={24} />
           </a>
         </div>
+
 
         <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
           Alameda da Universidade, 1649-013 Lisboa &nbsp;·&nbsp;

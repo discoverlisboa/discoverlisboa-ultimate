@@ -16,7 +16,7 @@ const Gallery = ({ t }: { t: any }) => {
                         {t.gallery.desc}
                     </p>
                     <a
-                        href="https://www.instagram.com/discoverlisboateam/"
+                        href={siteConfig.social.instagram}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-primary"
@@ -24,6 +24,7 @@ const Gallery = ({ t }: { t: any }) => {
                     >
                         <Instagram size={20} /> @discoverlisboateam
                     </a>
+
                 </div>
 
                 {/* Photo grid */}
@@ -35,9 +36,10 @@ const Gallery = ({ t }: { t: any }) => {
                     {photos.map((photo, i) => (
                         <motion.a
                             key={i}
-                            href="https://www.instagram.com/discoverlisboateam/"
+                            href={siteConfig.social.instagram}
                             target="_blank"
                             rel="noopener noreferrer"
+
                             initial={{ opacity: 0, scale: 0.95 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
@@ -87,9 +89,10 @@ const Gallery = ({ t }: { t: any }) => {
                             gap: '1.5rem',
                         }}>
                             <a
-                                href="https://drive.google.com/drive/folders/1g6dikTevZA6iOjBSjcLcPRqVcwk1Qh1F"
+                                href={siteConfig.links.googleDrive}
                                 target="_blank"
                                 rel="noopener noreferrer"
+
                                 className="glass-card"
                                 style={{
                                     display: 'flex',
@@ -112,9 +115,10 @@ const Gallery = ({ t }: { t: any }) => {
                             </a>
 
                             <a
-                                href="https://youtube.com/playlist?list=PLcTzOZSOf-cLlYk-Bm_xKBJbgUub7UIeU"
+                                href={siteConfig.videos[2].url}
                                 target="_blank"
                                 rel="noopener noreferrer"
+
                                 className="glass-card"
                                 style={{
                                     display: 'flex',

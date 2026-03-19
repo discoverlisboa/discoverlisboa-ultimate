@@ -14,7 +14,7 @@ export const siteConfig = {
                 name: "Disco Oficial Disc'Over",
                 price: "13€",
                 category: "Equipamento",
-                image: "/disc.jpeg",
+                image: "/gallery/disc.jpeg",
                 description: "175g Ultrastar - O padrão mundial para Ultimate Frisbee."
             },
             {
@@ -22,7 +22,7 @@ export const siteConfig = {
                 name: "Jersey Jogo (Home)",
                 price: "35€",
                 category: "Vestuário",
-                image: "/disc2.jpeg",
+                image: "/gallery/disc2.jpeg",
                 description: "Material respirável de alta performance com design exclusivo 2024."
             },
             {
@@ -30,7 +30,7 @@ export const siteConfig = {
                 name: "Hoodie Disc'Over",
                 price: "40€",
                 category: "Vestuário",
-                image: "/disc3.jpeg",
+                image: "/gallery/disc3.jpeg",
                 description: "Quente e confortável, perfeito para as noites de treino na Alameda."
             },
             {
@@ -38,7 +38,7 @@ export const siteConfig = {
                 name: "Pack Iniciante",
                 price: "45€",
                 category: "Bundle",
-                image: "/discs-jamor.jpeg",
+                image: "/gallery/discs-jamor.jpeg",
                 description: "Inclui 1 Disco + 1 Jersey. Tudo o que precisas para começar."
             }
         ],
@@ -60,10 +60,11 @@ export const siteConfig = {
         {
             id: "3",
             title: "Disc'Over Lisboa Highlights",
-            url: "https://www.youtube.com/embed/playlist?list=PLW3Lsc3S5TIDV8dZ0_8S4P_7R7wP1_n9_&si=l_n8_8_8_8_8_8_8", // Example playlist
-            thumbnail: "/discover1.jpeg" // Use local image as placeholder
+            url: "https://www.youtube.com/embed/playlist?list=PLcTzOZSOf-cLlYk-Bm_xKBJbgUub7UIeU",
+            thumbnail: "/gallery/discover1.jpeg"
         }
     ],
+
     gallery: [
         { src: "/gallery/RPC_1534.jpg", caption: "Copa Ibérica 2026 - Team Board" },
         { src: "/gallery/IMG_4851.jpg", caption: "Intensidade no Lançamento" },
@@ -79,8 +80,14 @@ export const siteConfig = {
         { src: "/gallery/RPC_1637.jpg", caption: "Aquecimento e Preparação" },
     ],
     social: {
-        instagram: "https://www.instagram.com/discoverlisboa/",
+        instagram: "https://www.instagram.com/discoverultimateteam",
         facebook: "https://www.facebook.com/ultimatediscoverlisboa",
         email: "discover.lisboa@gmail.com",
+        whatsapp: "https://chat.whatsapp.com/CPxKsKvSnUU3A5LDqyxSgE",
+    },
+    links: {
+        googleDrive: "https://drive.google.com/drive/folders/1g6dikTevZA6iOjBSjcLcPRqVcwk1Qh1F",
+        competitionResults: "http://ultiorganizer.portugal-ultimate.org/?view=clubcard&club=26",
     }
+
 };
