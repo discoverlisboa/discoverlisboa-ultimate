@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Heart, Coffee, Globe, Camera, Trophy } from 'lucide-react';
+import { siteConfig } from '../siteConfig';
 
 const Community = ({ t }: { t: any }) => {
     const activities = [
@@ -41,7 +42,21 @@ const Community = ({ t }: { t: any }) => {
                     ))}
                 </div>
 
+                <div style={{ marginTop: '3rem', textAlign: 'center' }}>
+                    <a 
+                        href={siteConfig.social.whatsapp} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="btn-primary"
+                        style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.8rem' }}
+                    >
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style={{ width: '20px', height: '20px' }} />
+                        {t.activities.whatsapp_cta}
+                    </a>
+                </div>
+
                 <motion.div
+
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
@@ -56,8 +71,8 @@ const Community = ({ t }: { t: any }) => {
                             </p>
                         </div>
                         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                            <img src="/gallery/jamor.jpeg" alt="Team" style={{ width: '100%', borderRadius: '0.5rem' }} />
-                            <img src="https://images.unsplash.com/photo-1533560904424-a0c61dc306fc?auto=format&fit=crop&q=80" alt="Drink" style={{ width: '100%', borderRadius: '0.5rem' }} />
+                            <img src="/gallery/RPC_1799.jpg" alt="Spirit Circle - Two teams together" style={{ width: '100%', borderRadius: '0.5rem', objectFit: 'cover', aspectRatio: '4/3' }} />
+                            <img src="/gallery/IMG_7063.jpg" alt="Teams walking together" style={{ width: '100%', borderRadius: '0.5rem', objectFit: 'cover', aspectRatio: '4/3' }} />
                         </div>
                     </div>
                 </motion.div>

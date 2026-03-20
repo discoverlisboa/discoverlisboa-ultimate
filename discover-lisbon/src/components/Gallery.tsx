@@ -22,7 +22,7 @@ const Gallery = ({ t }: { t: any }) => {
                         className="btn-primary"
                         style={{ textDecoration: 'none' }}
                     >
-                        <Instagram size={20} /> @discoverlisboateam
+                        <Instagram size={20} /> @discoverultimatefrisbee
                     </a>
 
                 </div>

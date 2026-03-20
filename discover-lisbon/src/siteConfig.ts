@@ -80,7 +80,7 @@ export const siteConfig = {
         { src: "/gallery/RPC_1637.jpg", caption: "Aquecimento e Preparação" },
     ],
     social: {
-        instagram: "https://www.instagram.com/discoverultimateteam",
+        instagram: "https://www.instagram.com/discoverultimatefrisbee",
         facebook: "https://www.facebook.com/ultimatediscoverlisboa",
         email: "discover.lisboa@gmail.com",
         whatsapp: "https://chat.whatsapp.com/CPxKsKvSnUU3A5LDqyxSgE",
